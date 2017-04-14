@@ -38,7 +38,6 @@ RUN set -ex \
  && docker-php-ext-enable apcu redis memcached
 
 ENV NEXTCLOUD_VERSION 11.0.1
-VOLUME /var/www/html
 
 RUN curl -fsSL -o nextcloud.tar.bz2 \
     "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2" \
